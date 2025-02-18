@@ -33,13 +33,13 @@ export default function Home() {
               placeholder="Add a new task" 
               className="flex-1"
             />
-            <Button onClick={addTask}>Add</Button>
+            <Button onClick={addTask}>Add Item</Button>
           </div>
           <ul className="w-full">
             {tasks.map((t, index) => (
               <li key={index} className="flex justify-between items-center p-2 bg-white shadow rounded mb-2">
                 {t}
-                <Button onClick={() => removeTask(index)} variant="destructive">Remove</Button>
+                <Button onClick={() => removeTask(index)} variant="destructive">Remove Item</Button>
               </li>
             ))}
           </ul>
